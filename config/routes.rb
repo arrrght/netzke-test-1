@@ -1,4 +1,12 @@
 NetzkeTest1::Application.routes.draw do
+
+  netzke
+  match "login" => "login#index"
+  match "users" => "users#index"
+
+  get "login/index"
+  get "users/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
